@@ -21,13 +21,22 @@ function Home() {
 
   const postUsers = async () => {
     try {
+      if (
+        !inputName.current.value ||
+        !inputAge.current.value ||
+        !inputEmail.current.value
+      ) {
+        alert("Por favor, preencha todos os campos.");
+        return;
+      }
+
       await api.post("/usuarios", {
         name: inputName.current.value,
         age: inputAge.current.value,
         email: inputEmail.current.value,
       });
 
-      getUsers(); // Atualiza a lista de usuários após o cadastro
+      getUsers();
     } catch (error) {
       console.error("Erro ao cadastrar usuário", error);
     }
