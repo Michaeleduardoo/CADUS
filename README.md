@@ -16,7 +16,7 @@ Este projeto é um simples Cadastro de Usuário construído com Express.js e Rea
 - npm como gerenciador de pacotes
 - Um banco de dados MongoDB  ou qualquer banco de dados suportado pelo Prisma
 
-  ## Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **Back-end:**
   - Node.js
